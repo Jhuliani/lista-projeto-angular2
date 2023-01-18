@@ -1,0 +1,50 @@
+.acoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.botao {
+  margin: 5px;
+  margin-top: 70px;
+  width: 200px;
+}
+
+.criar-itens {
+  padding: 1rem 0;
+}
+
+.criar-itens form {
+  background: #ecb29b;
+
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 1.5rem;
+}
+
+.criar-itens form label {
+  color: #9f2c00;
+  font-weight: bold;
+  margin: 0 0 0rem;
+}
+
+.criar-itens form .input {
+  border: none;
+  height: 20px;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 1rem;
+}
+
+
+.criar-itens form .textarea {
+  border: none;
+  padding: 1rem 1rem;
+  border-radius: 20px;
+  margin: 0.5rem 0 1rem;
+}
+

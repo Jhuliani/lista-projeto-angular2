@@ -1,0 +1,15 @@
+/* header {
+	width: 100%;
+	height: 40%;
+	min-height: 250px;
+	background-image: url(/lista/src/assets/imagens/fundo-cabecalho.png);
+	background-size: cover;
+    background-position: center;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+} */
+.cabecalho .imagem{
+  width: 100%;
+  height: 200px;
+}

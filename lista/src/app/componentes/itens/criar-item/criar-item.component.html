@@ -1,0 +1,30 @@
+<section class="container criar-itens ff-inter">
+  <header class="header">
+      <h2>Adicione um <br> item novo:</h2>
+  </header>
+
+  <form>
+    <label for="item">Item</label>
+    <input
+      type="textarea"
+      class="input"
+      id="item"
+      name="item"
+      placeholder="Digite o item"
+      [(ngModel)]="item.nome">
+    </form>
+    <form>
+      <label for="quantidade">Quantidade</label>
+      <input
+        type="text"
+        class="input"
+        id="quantidade"
+        name="quantidade"
+        placeholder="Digite a quantidade"
+        [(ngModel)]="item.quantidade">
+  </form>
+  <div class="acoes">
+    <button (click)="criarItem()" class="botao">Salvar</button>
+    <button (click)="cancelar()" class="botao">Cancelar</button>
+</div>
+</section>
