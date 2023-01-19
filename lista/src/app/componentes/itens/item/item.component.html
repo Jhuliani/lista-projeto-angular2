@@ -1,6 +1,8 @@
 <div class="item modelo1 ff-roboto-mono item-p">
-  <p class="item">{{ item.nome }}</p>
-  <p class="quantidade"><b>{{ item.quantidade }}</b></p>
+  <div class="descricao">
+    <p class="nome">Item: {{ item.nome }}</p>
+    <p class="quantidade"><b>Quantidade: {{ item.quantidade }}</b></p>
+  </div>
   <div class="acoes">
     <button class="botao-editar" routerLink="/itens/editarItem/{{item.id}}">
       <img src="/assets/imagens/icone-editar.png" alt="Ícone de editar">

@@ -2,13 +2,18 @@
   "itens": [
     {
       "nome": "teste",
-      "quantidade": "2",
+      "quantidade": "7",
       "id": 11
     },
     {
       "nome": "teste",
       "quantidade": "03",
       "id": 12
+    },
+    {
+      "nome": "farinha",
+      "quantidade": "1 kg",
+      "id": 13
     }
   ]
 }

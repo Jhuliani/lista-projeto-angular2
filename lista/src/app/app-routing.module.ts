@@ -24,7 +24,7 @@ const routes: Routes = [
     component: ExcluirItemComponent
   },
   {
-    path: 'itens/editaritem/:id',
+    path: 'itens/editarItem/:id',
     component: EditarItemComponent
 }
 ];
