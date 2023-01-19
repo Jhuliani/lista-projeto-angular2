@@ -12,14 +12,14 @@
 }
 
 .criar-itens {
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .criar-itens form {
   background: #ecb29b;
 
   border: none;
-
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
 

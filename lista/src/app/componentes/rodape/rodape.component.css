@@ -1,5 +1,7 @@
-
-.TextoCopyright {
-  justify-self: center;
-  
+footer {
+  background-color: #9f2c00;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
 }
