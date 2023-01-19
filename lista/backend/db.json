@@ -1,19 +1,39 @@
 {
   "itens": [
     {
-      "nome": "teste",
-      "quantidade": "7",
-      "id": 11
-    },
-    {
-      "nome": "teste",
-      "quantidade": "03",
-      "id": 12
-    },
-    {
-      "nome": "farinha",
+      "nome": "Farinha de rosca",
       "quantidade": "1 kg",
       "id": 13
+    },
+    {
+      "nome": "Leite",
+      "quantidade": "3 cx",
+      "id": 14
+    },
+    {
+      "nome": "Ovos",
+      "quantidade": "30",
+      "id": 15
+    },
+    {
+      "nome": "Queijo Mussarela",
+      "quantidade": "200 g",
+      "id": 16
+    },
+    {
+      "nome": "Shampoo",
+      "quantidade": "1",
+      "id": 17
+    },
+    {
+      "nome": "Água Sanitária",
+      "quantidade": "1 l",
+      "id": 18
+    },
+    {
+      "nome": "Sabonetes",
+      "quantidade": "7 un",
+      "id": 19
     }
   ]
 }
