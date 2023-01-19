@@ -3,25 +3,28 @@
       <h2>Adicione um <br> item novo:</h2>
   </header>
 
-  <form>
+  <form [formGroup]="formulario">
     <label for="item">Item</label>
     <input
       type="textarea"
       class="input"
       id="item"
-      name="item"
-      placeholder="Digite o item"
-      [(ngModel)]="item.nome">
-    </form>
-    <form>
+      formControlName="nome"
+      placeholder="Digite o item">
+      <div class="mensagem__erro" *ngIf="formulario.get('nome')?.errors && formulario.get('nome')?.touched">
+        Item é obrigatório!
+      </div>
+
       <label for="quantidade">Quantidade</label>
       <input
         type="text"
         class="input"
         id="quantidade"
-        name="quantidade"
-        placeholder="Digite a quantidade"
-        [(ngModel)]="item.quantidade">
+        formControlName="quantidade"
+        placeholder="Digite a quantidade">
+        <div class="mensagem__erro" *ngIf="formulario.get('quantidade')?.errors && formulario.get('quantidade')?.touched">
+          Quantidade é obrigatória!
+        </div>
   </form>
   <div class="acoes">
     <button (click)="criarItem()" class="botao">Salvar</button>

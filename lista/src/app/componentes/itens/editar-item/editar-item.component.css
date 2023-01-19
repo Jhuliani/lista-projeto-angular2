@@ -19,7 +19,7 @@
   background: #ecb29b;
 
   border: none;
-
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
 

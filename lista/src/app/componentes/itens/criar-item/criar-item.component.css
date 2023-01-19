@@ -48,3 +48,10 @@
   margin: 0.5rem 0 1rem;
 }
 
+.mensagem__erro {
+  font-size: 12px;
+  margin-left: 5px;
+  color: red;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}

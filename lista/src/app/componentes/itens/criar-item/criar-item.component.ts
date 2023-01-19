@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ItemService } from '../item.service';
 import { Item } from './../item';
@@ -14,19 +15,34 @@ export class CriarItemComponent {
 
   constructor(
     private service: ItemService,
-    private router: Router
+    private router: Router,
+    private formBuilder: FormBuilder
 ) { }
 
- item: Item = {
-    nome: '',
-    quantidade: ''
-  }
+    ngOnInit(): void {
+      this.formulario = this.formBuilder.group({
+        nome: ['', Validators.compose([
+          Validators.required,
+          Validators.pattern(/(.|\s)*\S(.|\s)*/)])],
+        quantidade: ['',Validators.compose([
+          Validators.required,
+          Validators.minLength(1)
+          ])]
+      })
+    }
+
+
+  formulario!: FormGroup;
 
   criarItem(){
-    this.service.criar(this.item).subscribe(() =>{
-      this.router.navigate(['/listarItem'])
-    })
+    console.log(this.formulario.get('autoria')?.errors)
+    if(this.formulario.valid){
+      this.service.criar(this.formulario.value).subscribe(() =>{
+        this.router.navigate(['/listarItem'])
+      })
+    }
   }
+
   cancelar() {
     this.router.navigate(['/listarItem'])
   }
