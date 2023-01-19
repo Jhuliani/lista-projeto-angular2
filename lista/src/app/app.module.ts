@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { ListarItemComponent } from './componentes/itens/listar-item/listar-item.component';
 import { ItemComponent } from './componentes/itens/item/item.component';
 import { ExcluirItemComponent } from './componentes/itens/excluir-item/excluir-item.component';
+import { EditarItemComponent } from './componentes/itens/editar-item/editar-item.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { ExcluirItemComponent } from './componentes/itens/excluir-item/excluir-i
     CriarItemComponent,
     ListarItemComponent,
     ItemComponent,
-    ExcluirItemComponent
+    ExcluirItemComponent,
+    EditarItemComponent
   ],
   imports: [
     BrowserModule,

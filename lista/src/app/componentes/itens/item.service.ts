@@ -20,4 +20,19 @@ export class ItemService {
     return this.http.post<Item>(this.API,item)
 }
 
+excluir(id: number): Observable<Item> {
+  const url = `${this.API}/${id}`
+  return this.http.delete<Item>(url)
+}
+
+buscarPorId(id: number): Observable<Item> {
+  const url = `${this.API}/${id}`
+  return this.http.get<Item>(url)
+}
+
+editar(item: Item): Observable<Item> {
+  const url = `${this.API}/${item.id}`
+  return this.http.put<Item>(url, item)
+}
+
 }

@@ -1,13 +1,15 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ItemService } from '../item.service';
 import { Item } from './../item';
+
 
 @Component({
   selector: 'app-criar-item',
   templateUrl: './criar-item.component.html',
   styleUrls: ['./criar-item.component.css']
 })
+
 export class CriarItemComponent {
 
   constructor(
@@ -15,7 +17,7 @@ export class CriarItemComponent {
     private router: Router
 ) { }
 
-  item: Item = {
+ item: Item = {
     nome: '',
     quantidade: ''
   }
